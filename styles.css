@@ -1,89 +1,100 @@
+/* General Reset */
 * {
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif; /* Set a basic font for the page */
-}
-
-/* Footer Styles */
+/* Footer Container */
 .footer {
     background-color: #333; /* Dark background for the footer */
-    color: #fff; /* White text color */
-    padding: 40px 20px; /* Padding for the footer */
+    color: white; /* White text color */
+    padding: 20px 0; /* Top and bottom padding */
 }
 
+/* Container for Inner Elements */
 .container {
     max-width: 1200px; /* Maximum width for the container */
     margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Horizontal padding */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
 }
 
-/* Media Icons */
+/* Company Logo and Media Icons */
 .company-media-logo {
-    display: flex; /* Flexbox for media logo */
-    align-items: center; /* Align items vertically */
+    display: flex; /* Flex layout */
     justify-content: space-between; /* Space between elements */
-    margin-bottom: 20px; /* Space below media logo */
+    align-items: center; /* Center elements vertically */
+    margin-bottom: 20px; /* Margin below the logo */
 }
 
-.company-media-logo h4 {
-    margin-right: 20px; /* Space between the title and icons */
-    font-size: 24px; /* Font size for company name */
+.media-icons {
+    display: flex; /* Flex layout for icons */
+    align-items: center; /* Center icons vertically */
 }
 
 .media-icons a {
-    color: #fff; /* White color for icons */
-    font-size: 24px; /* Size of icons */
-    margin-right: 15px; /* Space between icons */
-    transition: color 0.3s; /* Smooth transition for icon color */
+    color: white; /* Icon color */
+    margin-left: 15px; /* Space between icons */
+    font-size: 18px; /* Icon size */
+    text-decoration: none; /* Remove underline */
 }
 
 .media-icons a:hover {
-    color: #e63946; /* Change color on hover */
+    color: #f0a500; /* Change color on hover */
 }
 
-/* Footer Column Styles */
+/* Row of Columns */
 .row {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Wrap sections on smaller screens */
-    justify-content: space-between; /* Space out sections */
+    display: flex; /* Flexbox layout for columns */
+    justify-content: space-between; /* Space between columns */
+    flex-wrap: wrap; /* Wrap columns on smaller screens */
 }
 
+/* Individual Footer Columns */
 .footer-col {
-    flex: 1; /* Each section takes equal space */
-    min-width: 200px; /* Minimum width for each column */
-    margin: 10px; /* Margin around each column */
+    flex: 1; /* Allow columns to grow */
+    margin: 10px; /* Margin around columns */
+    min-width: 220px; /* Minimum width for responsive layout */
 }
 
 .footer-col h4 {
-    margin-bottom: 15px; /* Spacing below the heading */
-    font-size: 18px; /* Font size for section titles */
+    margin-bottom: 10px; /* Margin below headings */
+    font-size: 18px; /* Heading size */
 }
 
+/* Footer Links */
 .footer-col ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style: none; /* Remove bullet points */
 }
 
 .footer-col ul li {
-    margin-bottom: 10px; /* Spacing between list items */
+    margin-bottom: 8px; /* Margin between items */
 }
 
-.footer-col a {
-    color: #fff; /* White text for links */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s; /* Smooth transition for link color */
+.footer-col ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
 }
 
-.footer-col a:hover {
-    color: #e63946; /* Change color on hover */
+.footer-col ul li a:hover {
+    color: #f0a500; /* Change color on hover */
 }
 
-/* Responsive Styles */
-@media (max-width: 600px) {
+/* Contact Information */
+.contact {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.contact li {
+    margin-bottom: 8px; /* Margin between items */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .row {
-        flex-direction: column; /* Stack sections on small screens */
-        align-items: center; /* Center align sections */
+        flex-direction: column; /* Stack columns vertically on small screens */
     }
 }
