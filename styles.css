@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,1000&family=Poppins:wght@100;200;300;400;500&display=swap');
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +18,9 @@
     padding: 70px;
 }
 
-/* Company Logo and Media Icons */
 .company-media-logo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: -10px;
 }
 
@@ -32,10 +29,8 @@
     font-weight: 400;
 }
 
-/* Social Media Icons */
 .media-icons {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
 }
 
 .media-icons a {
@@ -44,35 +39,20 @@
     width: 40px;
     background-color: blue;
     color: white;
-    margin: 0 10px;
+    margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
 }
 
-.media-icons .instagram {
-    background-color: rgb(225, 51, 80);
-}
+.media-icons .instagram { background-color: rgb(225, 51, 80); }
+.media-icons .twitter { background-color: rgb(36, 159, 207); }
+.media-icons .facebook { background-color: rgb(85, 85, 192); }
+.media-icons .linkedin { background-color: rgb(14, 129, 174); }
+.media-icons .youtube { background-color: red; }
 
-.media-icons .twitter {
-    background-color: rgb(36, 159, 207);
-}
-
-.media-icons .facebook {
-    background-color: rgb(85, 85, 192);
-}
-
-.media-icons .linkedin {
-    background-color: rgb(14, 129, 174);
-}
-
-.media-icons .youtube {
-    background-color: red;
-}
-
-/* Footer Columns */
-.row {
-    display: flex;
+.row.link-boxes {
+    display: flex !important;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -96,6 +76,7 @@
     bottom: -10px;
     background-color: white;
     height: 2px;
+    box-sizing: border-box;
     width: 50px;
 }
 
@@ -106,24 +87,7 @@
 .footer-col ul li a {
     font-size: 18px;
     text-decoration: none;
-    color: #bbbbbb;
+    color: #bbbb;
 }
 
-.footer-col .contact li {
-    color: #bbbbbb;
-    font-size: 18px;
-}
-
-/* Responsive Layout */
-@media (max-width: 767px) {
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 574px) {
-    .footer-col {
-        width: 100%;
-    }
-}
+.footer-col .contact li
