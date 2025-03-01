@@ -10,18 +10,20 @@
 .container {
     max-width: 1170px;
     margin: auto;
+    padding: 0 15px;
 }
 
 .footer {
     background-color: black;
     color: white;
-    padding: 70px;
+    padding: 70px 0;
 }
 
 .company-media-logo {
     display: flex;
     justify-content: space-between;
-    margin-top: -10px;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .company-media-logo h4 {
@@ -30,7 +32,7 @@
 }
 
 .media-icons {
-    display: flex !important;
+    display: flex;
 }
 
 .media-icons a {
@@ -43,6 +45,11 @@
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.media-icons a:hover {
+    opacity: 0.8;
 }
 
 .media-icons .instagram { background-color: rgb(225, 51, 80); }
@@ -52,14 +59,15 @@
 .media-icons .youtube { background-color: red; }
 
 .row.link-boxes {
-    display: flex !important;
-    justify-content: space-between;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footer-col {
     width: 25%;
-    padding: 50px 15px;
+    padding: 0 15px;
+    margin-bottom: 30px;
 }
 
 .footer-col h4 {
@@ -76,7 +84,6 @@
     bottom: -10px;
     background-color: white;
     height: 2px;
-    box-sizing: border-box;
     width: 50px;
 }
 
@@ -88,6 +95,49 @@
     font-size: 18px;
     text-decoration: none;
     color: #bbbb;
+    transition: color 0.3s ease;
 }
 
-.footer-col .contact li
+.footer-col ul li a:hover {
+    color: white;
+}
+
+.footer-col .contact li {
+    font-size: 18px;
+    color: #bbbb;
+    list-style: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color: #bbbb;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-col {
+        width: 100%;
+    }
+}
