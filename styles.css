@@ -32,7 +32,7 @@
 }
 
 .media-icons {
-    display: flex !important; /* Fix: Ensure it's flex */
+    display: flex !important; /* Force flex display */
     gap: 10px; /* Add spacing between icons */
 }
 
@@ -59,7 +59,7 @@
 .media-icons .youtube { background-color: red; }
 
 .row.link-boxes {
-    display: flex !important; /* Fix: Ensure it's flex */
+    display: flex !important; /* Force flex display */
     flex-wrap: wrap; /* Allow wrapping for responsiveness */
     justify-content: space-between; /* Space out the columns */
 }
