@@ -31,10 +31,9 @@
     font-weight: 400;
 }
 
-/* FIX 1: Ensure .media-icons has display: flex */
 .media-icons {
-    display: flex !important;
-    gap: 10px; /* Added spacing between icons */
+    display: flex;
+    gap: 10px;
 }
 
 .media-icons a {
@@ -43,7 +42,6 @@
     width: 40px;
     background-color: blue;
     color: white;
-    margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
@@ -60,9 +58,8 @@
 .media-icons .linkedin { background-color: rgb(14, 129, 174); }
 .media-icons .youtube { background-color: red; }
 
-/* FIX 2: Ensure .row.link-boxes has display: flex */
 .row.link-boxes {
-    display: flex !important;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
