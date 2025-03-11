@@ -32,8 +32,8 @@
 }
 
 .media-icons {
-    display: flex;
-    gap: 10px;
+    display: flex !important; /* Fix: Ensure it's flex */
+    gap: 10px; /* Add spacing between icons */
 }
 
 .media-icons a {
@@ -59,9 +59,9 @@
 .media-icons .youtube { background-color: red; }
 
 .row.link-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex !important; /* Fix: Ensure it's flex */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-between; /* Space out the columns */
 }
 
 .footer-col {
