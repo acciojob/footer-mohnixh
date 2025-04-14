@@ -11,7 +11,7 @@
 }
 
 .media-icons {
-  display: flex;
+  display: flex !important;
   gap: 10px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .link-boxes {
-  display: flex;
+  display: flex !important;
   gap: 30px;
   margin-top: 20px;
 }
